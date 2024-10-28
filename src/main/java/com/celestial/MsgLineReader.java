@@ -2,22 +2,16 @@ package com.celestial;
 
 import java.util.Scanner;
 
-public class MsgLineReader {
-    private final Scanner scanner;
+public class MsgLineReader extends ElementReader{
 
     public MsgLineReader(Scanner scanner) {
-        this.scanner = scanner;
+        super(scanner);
     }
 
-    public String readFromKeyboad() {
+/*    public String readFromKeyboard() {
         prompt();
 
         return scanner.nextLine();
-    }
+    }*/
 
-    static private boolean prompt()
-    {
-        System.out.print("Enter a message: ");
-        return true;
-    }
 }

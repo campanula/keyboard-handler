@@ -20,7 +20,7 @@ public class App
 
         try
         {
-            while( (lineRead = messageLineReader.readFromKeyboad()) != null )
+            while( (lineRead = messageLineReader.readFromKeyboard(sc)) != null )
             {
                 if(lineRead.equalsIgnoreCase("QUIT"))
                     break;
