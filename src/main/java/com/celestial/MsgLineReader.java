@@ -1,5 +1,6 @@
 package com.celestial;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class MsgLineReader extends ElementReader{
@@ -8,10 +9,10 @@ public class MsgLineReader extends ElementReader{
         super(scanner);
     }
 
-/*    public String readFromKeyboard() {
+    public String readFromKeyboard() {
         prompt();
 
         return scanner.nextLine();
-    }*/
+    }
 
 }

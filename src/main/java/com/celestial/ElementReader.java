@@ -1,10 +1,11 @@
 package com.celestial;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class ElementReader {
 
-     final Scanner scanner;
+     Scanner scanner;
 
     public ElementReader(Scanner scanner) {
         this.scanner = scanner;
@@ -16,8 +17,7 @@ public class ElementReader {
         return true;
     }
 
-    public String readFromKeyboard(Scanner scanner){
-        prompt();
+    public String readFromKeyboard(InputStream inputStream){
         return "";
     }
 }

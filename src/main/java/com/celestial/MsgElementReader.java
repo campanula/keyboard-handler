@@ -8,4 +8,9 @@ public class MsgElementReader extends ElementReader {
         super(scanner);
     }
 
+    public String readFromKeyboard() {
+        prompt();
+
+        return scanner.next();
+    }
 }
