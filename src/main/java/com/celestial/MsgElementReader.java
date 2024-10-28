@@ -9,15 +9,10 @@ public class MsgElementReader {
         this.scanner = scanner;
     }
 
-    String readFromKeyboad() {
-        String lineRead;
-
+    public String readFromKeyboad() {
         prompt();
-        
-        if ((lineRead = scanner.nextLine()) != null) {
-            return lineRead;
-        }
-        return null;
+
+        return scanner.nextLine();
     }
 
     static private boolean prompt()
