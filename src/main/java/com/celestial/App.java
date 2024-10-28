@@ -16,11 +16,11 @@ public class App
         Scanner sc = new Scanner(System.in);
         int lineNo = 0;
         ArrayList<LineEntry> lines = new ArrayList<>(10);
-        MsgElementReader mer = new MsgElementReader(sc);
+        MsgLineReader messageLineReader = new MsgLineReader(sc);
 
         try
         {
-            while( (lineRead = mer.readFromKeyboad()) != null )
+            while( (lineRead = messageLineReader.readFromKeyboad()) != null )
             {
                 if(lineRead.equalsIgnoreCase("QUIT"))
                     break;

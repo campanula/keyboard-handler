@@ -2,17 +2,17 @@ package com.celestial;
 
 import java.util.Scanner;
 
-public class MsgElementReader {
+public class MsgLineReader {
     private final Scanner scanner;
 
-    public MsgElementReader(Scanner scanner) {
+    public MsgLineReader(Scanner scanner) {
         this.scanner = scanner;
     }
 
     public String readFromKeyboad() {
         prompt();
 
-        return scanner.next();
+        return scanner.nextLine();
     }
 
     static private boolean prompt()
