@@ -11,7 +11,10 @@ import java.io.InputStream;
  *
  * @author selvy
  */
-public abstract class ElementReader
+public abstract class PromptSender
 {
-    abstract    public  String readFromKeyboard(InputStream is);
+    protected void prompt( String msg )
+    {
+        System.out.println(msg);
+    }
 }

@@ -22,7 +22,7 @@ public class App
         readers.add(mlr);
         readers.add(mir);
         int lineNo = 0;
-        ArrayList lines = new ArrayList(10);
+        ArrayList<LineEntry> lines = new ArrayList<>(10);
 
         try
         {
