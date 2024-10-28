@@ -1,16 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.celestial;
 
+import java.io.InputStream;
 import java.util.Scanner;
 
-public class MsgElementReader extends ElementReader {
+/**
+ *
+ * @author selvy
+ */
+public class MsgElementReader   implements IElementReader
+{
+    @Override
+    public  String readFromKeyboard( InputStream is )
+    {
+        Scanner theScanner = new Scanner( is );
 
-    public MsgElementReader(Scanner scanner) {
-        super(scanner);
-    }
+        System.out.print("Enter an Item (White space as seperator): ");
 
-    public String readFromKeyboard() {
-        prompt();
+        String item = theScanner.next();
 
-        return scanner.next();
+        return item;
     }
 }

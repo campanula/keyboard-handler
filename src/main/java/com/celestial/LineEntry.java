@@ -19,7 +19,7 @@ public class LineEntry
         this.itsLineNo = lineNo;
         this.itsText = text;
     }
-    
+
     public int getItsLineNo()
     {
         return itsLineNo;
@@ -28,7 +28,7 @@ public class LineEntry
     public String getItsText()
     {
         return itsText;
-    } 
+    }
 
     @Override
     public String toString()
